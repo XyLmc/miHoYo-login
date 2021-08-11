@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    -webkit-touch-callout: none; /*系统默认菜单被禁用*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -khtml-user-select: none; /*早期浏览器*/
+    -moz-user-select: none; /*火狐*/
+    -ms-user-select: none; /*IE10*/
+}
+li{
+    list-style: none;
+}
+div{
+    box-sizing: border-box;
+}
+/*让连接没有下划线*/
+a{
+    text-decoration: none;
+}
+/*让连接点击的时候没有样式*/
+a:-webkit-any-link {
+    color: -webkit-link;
+}

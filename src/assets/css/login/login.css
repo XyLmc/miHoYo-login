@@ -1,0 +1,16 @@
+.login{
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    border: 1px solid #4ea4dc;
+    border-radius: 5px;
+    color: white;
+    background-color: #4ea4dc;
+    cursor: pointer;
+}
+.login:hover{
+    background-color: #74d9F1;
+    border: 1px solid #74d9F1;
+}
