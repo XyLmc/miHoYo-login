@@ -1,4 +1,4 @@
-<template>
+npm<template>
 <!--  给这个页面一个灰色背景-->
   <div id="app">
     <router-view/>

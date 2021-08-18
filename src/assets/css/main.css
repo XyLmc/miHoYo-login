@@ -19,7 +19,29 @@ div{
 a{
     text-decoration: none;
 }
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #909090;
+}
+a, button, input {
+    margin: initial;
+}
+img {
+    border-style: none;
+}
+img {
+    width: auto;
+    height: auto;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
 /*让连接点击的时候没有样式*/
 a:-webkit-any-link {
     color: -webkit-link;
+}
+body{
+    background-color: #f4f5f5;
 }
