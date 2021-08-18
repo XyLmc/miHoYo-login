@@ -1,3 +1,5 @@
+const {Captcha} = require('../model')
+
 exports.login = async (req,res,next) => {
     try{
         res.status(200).send('帅气')
@@ -8,7 +10,10 @@ exports.login = async (req,res,next) => {
 
 exports.getCaptcha = async (req,res,next) =>{
     try{
-        res.status(200).send('验证码')
+        let captcha = await Captcha.findOne()
+        res.status(200).json({
+            captcha
+        })
     }catch (err){
         next(err)
     }

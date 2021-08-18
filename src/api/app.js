@@ -1,4 +1,5 @@
 const express = require('express')
+require('./model')
 const app = express()
 const router = require('./router/index')
 
@@ -9,6 +10,7 @@ app.use(cors())
 app.use(express.json())
 
 app.use('/api',router)
+
 
 
 //错误处理中间件

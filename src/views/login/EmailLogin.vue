@@ -1,13 +1,13 @@
 <template>
   <!--    手机验证码登录方式的内容-->
   <form>
-<!--    手机号的框-->
-    <div class="container" :class="{inputActive:phoneFocus}">
+<!--    邮箱的框-->
+    <div class="container" :class="{inputActive:emailFocus}">
       <!--      判断内容是否为空，用来判断这个文本内容的变大变小-->
-      <div class="input-text" :class="{active:phone?1:0}">手机号注册/登录</div>
-      <input type="text" v-model="phone" @focus="phoneFocus=true" @blur="phoneFocus=false">
+      <div class="input-text" :class="{active:email?1:0}">邮箱注册/登录</div>
+      <input type="text" v-model="email" @focus="emailFocus=true" @blur="emailFocus=false">
     </div>
-<!--    验证码的框-->
+<!--    密码的框-->
     <div class="container" :class="{inputActive:passwordFocus}">
       <!--      判断内容是否为空，用来判断这个文本内容的变大变小-->
       <div class="input-text" :class="{active:password?1:0}">手机验证码</div>
@@ -25,9 +25,9 @@ export default {
   name: "CaptchaLogin",
   data(){
     return{
-      phoneFocus:false,
+      emailFocus:false,
       passwordFocus:false,
-      phone:'',
+      email:'',
       password:''
     }
   },

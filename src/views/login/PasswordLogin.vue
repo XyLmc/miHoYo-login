@@ -3,7 +3,7 @@
   <form>
     <!--    手机号的框-->
     <div class="container" :class="{inputActive:phoneFocus}">
-      <div class="phone-text" :class="{active:phone?1:0}">手机号/邮箱</div>
+      <div class="phone-text" :class="{active:phone?1:0}">账号登录</div>
       <input type="text" v-model="phone" @focus="phoneFocus=true" @blur="phoneFocus=false">
     </div>
     <!--    密码的框-->

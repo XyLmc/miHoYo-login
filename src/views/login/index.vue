@@ -7,8 +7,8 @@
     <div class="login-content">
 <!--      登录方式-->
       <div class="login-mode">
-        <div :class={modeActive:modeActive} @click="loginModeChange(true)">验证码登录</div>
-        <div :class={modeActive:!modeActive} @click="loginModeChange(false)">密码登录</div>
+        <div :class={modeActive:modeActive} @click="loginModeChange(true)">邮箱登录</div>
+        <div :class={modeActive:!modeActive} @click="loginModeChange(false)">账号登录</div>
         <i class="mode-line" :class={lineLeft:modeActive}></i>
       </div>
 <!--      切换登录方式时下面内容的更换-->
@@ -34,7 +34,7 @@ export default {
     loginModeChange(value){
       if(value){
         this.modeActive=true
-        this.$router.replace('captcha')
+        this.$router.replace('email')
       }else{
         this.modeActive=false
         this.$router.replace('password')
@@ -42,7 +42,7 @@ export default {
     }
   },
   created() {
-    this.$router.push('/login/captcha')
+    this.$router.push('/login/email')
   }
 }
 </script>

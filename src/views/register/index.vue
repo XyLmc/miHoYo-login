@@ -12,7 +12,7 @@
       <register></register>
       <!--      忘记密码，立即注册-->
       <div class="to-login">
-        <router-link to="/login/captcha">返回登录</router-link>
+        <router-link to="/login/email">返回登录</router-link>
       </div>
     </div>
   </div>
@@ -31,8 +31,9 @@ export default {
 .register-bg{
   position: relative;
   width: 612px;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
+  padding-bottom: 100px;
 }
 .register-bg img{
   width: 216px;

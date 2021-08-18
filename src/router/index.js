@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import login from '../views/login/index'
-import captcha from '../views/login/CaptchaLogin'
+import EmailLogin from '../views/login/EmailLogin'
 import PasswordLogin from "@/views/login/PasswordLogin";
 import register from "@/views/register/index"
 
@@ -14,9 +14,9 @@ const routes = [
     component: login,
     children:[
       {
-        path:'/login/captcha',
-        name:'captcha',
-        component:captcha
+        path:'/login/email',
+        name:'email',
+        component:EmailLogin
       },
       {
         path:'/login/password',
